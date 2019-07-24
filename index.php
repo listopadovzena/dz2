@@ -9,7 +9,7 @@
 
 function example() {
     $a = 0;
-    include('include.php');
+    include __DIR__.'/include.php';
     return $a;
 }
 
