@@ -6,8 +6,6 @@
  * Time: 20:16
  */
 
-$one = 1;
-$zero = 0;
 $and = 'Конъюнкция';
 $or = 'Дизъюнкция';
 $xor = 'Сложение по модулю 2';
@@ -34,25 +32,26 @@ $xor = 'Сложение по модулю 2';
             a/\b
         </th>
     </tr>
+
     <tr>
-        <td> <?php echo $zero?></td>
-        <td><?php echo $zero?></td>
-        <td><?php echo $zero?></td>
+        <td> <?php echo (int)(true && false)?></td>
+        <td><?php echo (int)(false && false)?></td>
+        <td><?php echo (int)(false && true)?></td>
     </tr>
     <tr>
-        <td><?php echo $one?></td>
-        <td><?php echo $zero?></td>
-        <td><?php echo $zero?></td>
+        <td><?php echo (int)(true && true)?></td>
+        <td><?php echo (int)(true && false)?></td>
+        <td><?php echo (int)(false && false)?></td>
     </tr>
     <tr>
-        <td><?php echo $zero?></td>
-        <td><?php echo $one?></td>
-        <td><?php echo $zero?></td>
+        <td><?php echo (int)(true && false)?></td>
+        <td><?php echo (int)(true && true)?></td>
+        <td><?php echo (int)(false && true)?></td>
     </tr>
     <tr>
-        <td><?php echo $one?></td>
-        <td><?php echo $one?></td>
-        <td><?php echo $one?></td>
+        <td><?php echo (int)(true && true)?></td>
+        <td><?php echo (int)(true && true)?></td>
+        <td><?php echo (int)(true && true)?></td>
     </tr>
 </table>
 
@@ -71,24 +70,24 @@ $xor = 'Сложение по модулю 2';
         </th>
     </tr>
     <tr >
-        <td> <?php echo $zero?></td>
-        <td><?php echo $zero?></td>
-        <td><?php echo $zero?></td>
+        <td> <?php echo (int)(false || false)?></td>
+        <td><?php echo (int)(false || false)?></td>
+        <td><?php echo (int)(false || false)?></td>
     </tr>
     <tr>
-        <td><?php echo $one?></td>
-        <td><?php echo $zero?></td>
-        <td><?php echo $one?></td>
+        <td><?php echo (int)(false || true)?></td>
+        <td><?php echo (int)(false || false)?></td>
+        <td><?php echo (int)(true || false)?></td>
     </tr>
     <tr>
-        <td><?php echo $zero?></td>
-        <td><?php echo $one?></td>
-        <td><?php echo $one?></td>
+        <td><?php echo (int)(false || false)?></td>
+        <td><?php echo (int)(false || true)?></td>
+        <td><?php echo (int)(true || false)?></td>
     </tr>
     <tr>
-        <td><?php echo $one?></td>
-        <td><?php echo $one?></td>
-        <td><?php echo $one?></td>
+        <td><?php echo (int)(false || true)?></td>
+        <td><?php echo (int)(true || false)?></td>
+        <td><?php echo (int)(true || true)?></td>
     </tr>
 </table>
 <table>
@@ -106,24 +105,24 @@ $xor = 'Сложение по модулю 2';
         </th>
     </tr>
     <tr >
-        <td> <?php echo $zero?></td>
-        <td><?php echo $zero?></td>
-        <td><?php echo $zero?></td>
+        <td> <?php echo (int)(false xor false)?></td>
+        <td><?php echo (int)(false xor false)?></td>
+        <td><?php echo (int)(true xor true)?></td>
     </tr>
     <tr>
-        <td><?php echo $one?></td>
-        <td><?php echo $zero?></td>
-        <td><?php echo $one?></td>
+        <td><?php echo (int)(false xor true)?></td>
+        <td><?php echo (int)(false xor false)?></td>
+        <td><?php echo (int)(true xor false)?></td>
     </tr>
     <tr>
-        <td><?php echo $zero?></td>
-        <td><?php echo $one?></td>
-        <td><?php echo $one?></td>
+        <td><?php echo (int)(true xor true)?></td>
+        <td><?php echo (int)(false xor true)?></td>
+        <td><?php echo (int)(false xor true)?></td>
     </tr>
     <tr>
-        <td><?php echo $one?></td>
-        <td><?php echo $one?></td>
-        <td><?php echo $zero?></td>
+        <td><?php echo (int)(true xor false)?></td>
+        <td><?php echo (int)(false xor true)?></td>
+        <td><?php echo (int)(false xor false)?></td>
     </tr>
 </table>
 
